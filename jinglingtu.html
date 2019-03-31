@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       ul{
+           list-style: none;
+           width: 288px;
+           margin: 50px auto;
+
+       }
+    li{
+        float: left;
+        width: 70px;
+        height: 69px;
+        border: 1px solid black;
+        margin-bottom: -1px;
+        margin-left: -1px;
+
+
+
+    }
+    span{
+        display: block;
+        background-image:url("123.png");
+        width: 24px;
+        height: 24px;
+        margin: 10px auto;
+    }
+       p{
+         text-align: center;
+        }
+    </style>
+</head>
+<body>
+<ul >
+    <li>
+        <span></span>
+        <p>充话费</p>
+    </li>
+    <li>
+        <span></span>
+        <p>旅行</p>
+    </li>
+    <li>
+        <span></span>
+        <p>车险</p>
+    </li>
+    <li>
+        <span></span>
+        <p>游戏</p>
+    </li>
+    <li>
+        <span></span>
+        <p>彩票</p>
+    </li>
+    <li>
+        <span></span>
+        <p>电影</p>
+    </li>
+    <li>
+        <span></span>
+        <p>酒店</p>
+    </li>
+    <li>
+        <span></span>
+        <p>理财</p>
+    </li>
+    <li>
+        <span></span>
+        <p>找服务</p>
+    </li>
+    <li>
+        <span></span>
+        <p>演出</p>
+    </li>
+    <li>
+        <span></span>
+        <p>水电煤</p>
+    </li>
+    <li>
+        <span></span>
+        <p>火车票</p>
+    </li>
+</ul>
+</body>
+    <script>
+        var spans = document.querySelectorAll("span");//选中所有span标签
+        for (var i = 0; i<spans.length;i++) {
+            spans[i].style.backgroundPositionY = i * -44 + 'px';
+        }
+    </script>
+</html>
